@@ -1,0 +1,46 @@
+find: ‘/home/user1’: Permission denied
+----- System Error Analysis 2026-03-12 22:45:13 -----
+[   13.141305] systemd[1]: Starting systemd-random-seed.service - Load/Save OS Random Seed...
+[   13.141329] systemd[1]: systemd-tpm2-setup.service - TPM SRK Setup was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[   13.141345] systemd[1]: systemd-pcrnvdone.service - TPM PCR NvPCR Initialization Separator was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[   13.169166] systemd[1]: Started systemd-journald.service - Journal Service.
+[   13.300049] systemd-journald[484]: Received client request to flush runtime journal.
+[   13.375992] systemd-journald[484]: File /var/log/journal/19673a59dad44d0c94efe711459becae/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[   15.463162] ACPI: AC: AC Adapter [ACAD] (on-line)
+[   15.988804] input: PC Speaker as /devices/platform/pcspkr/input/input6
+[   16.268221] RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 10737418240 ms ovfl timer
+[   16.290777] sd 32:0:0:0: Attached scsi generic sg0 type 0
+[   16.290925] sr 3:0:0:0: Attached scsi generic sg1 type 5
+[   16.702787] Adding 2094076k swap on /dev/sda5.  Priority:-2 extents:1 across:2094076k 
+[   17.533399] RPC: Registered named UNIX socket transport module.
+[   17.533404] RPC: Registered udp transport module.
+[   17.533406] RPC: Registered tcp transport module.
+[   17.533407] RPC: Registered tcp-with-tls transport module.
+[   17.533408] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[   23.654495] NET: Registered PF_QIPCRTR protocol family
+[   24.349467] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+[   54.621018] systemd-journald[484]: File /var/log/journal/19673a59dad44d0c94efe711459becae/user-1000.journal corrupted or uncleanly shut down, renaming and replacing.
+Error Type Analysis:
+find: ‘/home/user1’: Permission denied
+----- System Error Analysis 2026-03-12 22:45:13 -----
+[   13.141305] systemd[1]: Starting systemd-random-seed.service - Load/Save OS Random Seed...
+[   13.141329] systemd[1]: systemd-tpm2-setup.service - TPM SRK Setup was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[   13.141345] systemd[1]: systemd-pcrnvdone.service - TPM PCR NvPCR Initialization Separator was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+[   13.169166] systemd[1]: Started systemd-journald.service - Journal Service.
+[   13.300049] systemd-journald[484]: Received client request to flush runtime journal.
+[   13.375992] systemd-journald[484]: File /var/log/journal/19673a59dad44d0c94efe711459becae/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[   15.463162] ACPI: AC: AC Adapter [ACAD] (on-line)
+[   15.988804] input: PC Speaker as /devices/platform/pcspkr/input/input6
+[   16.268221] RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 10737418240 ms ovfl timer
+[   16.290777] sd 32:0:0:0: Attached scsi generic sg0 type 0
+[   16.290925] sr 3:0:0:0: Attached scsi generic sg1 type 5
+[   16.702787] Adding 2094076k swap on /dev/sda5.  Priority:-2 extents:1 across:2094076k 
+[   17.533399] RPC: Registered named UNIX socket transport module.
+[   17.533404] RPC: Registered udp transport module.
+[   17.533406] RPC: Registered tcp transport module.
+[   17.533407] RPC: Registered tcp-with-tls transport module.
+[   17.533408] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[   23.654495] NET: Registered PF_QIPCRTR protocol family
+[   24.349467] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+[   54.621018] systemd-journald[484]: File /var/log/journal/19673a59dad44d0c94efe711459becae/user-1000.journal corrupted or uncleanly shut down, renaming and replacing.
+Error Type Analysis:
